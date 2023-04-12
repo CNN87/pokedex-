@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex sims</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons8-pokeball-2-color-32.png"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="backgroundcolortype.css"> 
+    <script src="./templates/header.js"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="includeHTML(), render()">
+    
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="background" id="maincontent">
+        <div class="card" id="pokecard" onclick="openPokemon()">
+            <div class="pokemon-card-head">
+                <h2>Bulbasaur</h2>
+                <div>#1</div>
+            </div>
+            <div class="pokemon-card-wrapper">
+                
+                <img src="" alt="Bulbasaur">
+            </div>
+        </div>     
+    </div> 
+    
+    <div id="popUpContainer" class="popUp-container hide" onclick="closePokemon()">
+        <div id="detail-card" class="detail-card" onclick="doNotClose(event)"> 
+                <div class="top-container"></div>
+                <div class="bottom-container"></div>  
+        </div>
+    </div>
+
+</body>
+</html>
